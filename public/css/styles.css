@@ -1,0 +1,160 @@
+/*//////////////////////////////////////////
+             FONT STYLES
+///////////////////////////////////////////*/
+@import url('https://fonts.googleapis.com/css?family=Bitter|Black+Han+Sans|Crimson+Text|Emilys+Candy|Fredericka+the+Great|Nosifer|Open+Sans|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Roboto');
+
+/*//////////////////////////////////////////
+             GLOBAL CSS
+///////////////////////////////////////////*/
+*{
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  outline:none;
+}
+html{
+  width: 100%;
+}
+
+body{
+  color: #ffff;
+  font-size: 1em;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Merriweather', serif;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  background: rgb(255, 255, 255) url(../../public/images/world.jpg) no-repeat center / cover;
+  background-attachment: fixed;
+}
+
+img{
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+li{
+  list-style: none;
+}
+a{
+   text-decoration: none;
+   cursor: pointer;
+}
+
+/* NOTE:  */
+
+#main{
+  padding: 5px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+      /* NOTE: top nav */
+       .serch-conatiner{
+         border: border sold 2px black;
+         padding: 10px;
+         height: 50px;
+       }
+           .serch-wrap{
+             position: fixed;
+             height: 10px;
+             width: 100%;
+             left: 0;
+             top: 5px;
+             text-align: center;
+           }
+               .serch-wrap-inner{
+                 display: inline-block;
+                  min-width: 200px;
+               }
+                   #select{
+                     width: 100%;
+                     height: 50px;
+                     border-radius: 25px;
+                     padding: 5px 10px;
+                     background: rgba(0, 0, 0, 0.67);
+                     color: white;
+                   }
+        /* NOTE: h1 header */
+        .hederTitle{
+          font-size: 1.5rem;
+          margin: 20px 0;
+          color: white;
+        }
+        #LoadingStatus{
+          color: lightgreen;
+          background: rgba(0, 0, 0, 0.67);
+          padding: 10px;
+          max-width: 300px;
+          margin: 0 auto;
+          border-radius: 10px;
+        }
+        /* NOTE: box wrap */
+        #word-con{
+          padding: 5px;
+          min-height: calc(100vh - 200px);
+          display: flex;
+          justify-content: center;
+        }
+            .box-wrap{
+              width: 100%;
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: center;
+              padding: 5px;
+            }
+                .img-wraper{
+                   width: 100%;
+                }
+                    .img-wraper img{
+                      max-height: 450px;
+                    }
+                .inner-wrap{
+                   background: rgba(0, 0, 0, 0.67);
+                   margin: 5px 0;
+                   padding: 10px 5px;
+                   width: 100%;
+                   min-height: 450px;
+                }
+                    .country{
+                      margin: 10px 0;
+                    }
+                    .country-ul{
+                      display: inline-block;
+                      text-align: left;
+                      width: 80%;
+                    }
+                    #country-ul-inner{
+                        margin: 5px 0 5px 20px;
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                        #country-ul-inner h3{
+                          width: 100%;
+                        }
+                        .country-ul li{
+                          margin: 5px 0;
+                        }
+                        #country-ul-inner li{
+                          margin: 5px 0 5px 10px;
+                        }
+
+
+@media only screen and (min-width:1300px){
+  .box-wrap{
+    width: 80%;
+  }
+  .img-wraper,
+  .inner-wrap{
+      width: calc(50%);
+      padding: 10px;
+  }
+  .img-wraper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
